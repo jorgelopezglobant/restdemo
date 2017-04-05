@@ -4,6 +4,7 @@ import com.restexample.model.Customer;
 import com.restexample.service.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -15,7 +16,6 @@ public class RestCustomerImpl implements RestCustomer {
 
     @Autowired
     CustomerServiceImpl service;
-
 
     @Override
     public List<Customer> findAll() {
@@ -35,5 +35,10 @@ public class RestCustomerImpl implements RestCustomer {
     @Override
     public void deleteCustomer(int idCustomer) {
         service.delete(idCustomer);
+    }
+
+    @Override
+    public void updateCustomer(Customer customer) {
+        service.save(customer);
     }
 }
