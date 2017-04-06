@@ -16,7 +16,6 @@ public class RestLaptopImpl implements RestLaptop {
 
     @Autowired
     LaptopServiceImpl service;
-    
 
     @Override
     public List<Laptop> findAll() {
