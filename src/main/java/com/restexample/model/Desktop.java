@@ -20,7 +20,7 @@ public class Desktop implements Repairable{
     private String processor;
 
     @Override
-    public List<TechService> getClinicalRecord() {
+    public List<InvoiceDetail> getClinicalRecord() {
         return null;
     }
 }

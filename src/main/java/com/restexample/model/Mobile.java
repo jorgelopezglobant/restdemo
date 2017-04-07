@@ -21,7 +21,7 @@ public class Mobile implements Repairable {
     private String IMEI;
 
     @Override
-    public List<TechService> getClinicalRecord() {
+    public List<InvoiceDetail> getClinicalRecord() {
         return null;
     }
 }

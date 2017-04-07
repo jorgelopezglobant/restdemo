@@ -7,5 +7,5 @@ import java.util.List;
  */
 public interface Repairable {
 
-    List<TechService> getClinicalRecord();
+    List<InvoiceDetail> getClinicalRecord();
 }

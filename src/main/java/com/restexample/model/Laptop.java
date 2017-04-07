@@ -20,7 +20,7 @@ public class Laptop implements Repairable{
     private String model;
 
     @Override
-    public List<TechService> getClinicalRecord() {
+    public List<InvoiceDetail> getClinicalRecord() {
         return null;
     }
 }
